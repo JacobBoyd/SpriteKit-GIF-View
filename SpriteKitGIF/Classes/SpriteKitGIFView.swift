@@ -10,18 +10,19 @@ import UIKit
 import SpriteKit
 import ImageIO
 
-class SpriteKitGIFView: SKView {
+public class SpriteKitGIFView: SKView {
     private var animationScene : SKScene!
     private var activityIndicator : UIActivityIndicatorView!
     private var node = SKSpriteNode()
     private var animationFrames: [SKTexture] = []
     
-    func displayGIF(_ fileURL: URL?) {
+    public func displayGIF(_ fileURL: URL?) {
         guard let unwrappedURL = fileURL as CFURL? else {
             print("SpriteKitGIFView - fileURL incorrect")
             return
         }
         activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        self.addSubview(activityIndicator)
         activityIndicator.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
         activityIndicator.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         
@@ -80,7 +81,7 @@ class SpriteKitGIFView: SKView {
         }
     }
     
-    func startAnimation(_ timePerFrame: TimeInterval=0.06) {
+    private func startAnimation(_ timePerFrame: TimeInterval=0.06) {
         node.run(SKAction.repeatForever(
             SKAction.animate(with: animationFrames,
                              timePerFrame: timePerFrame, //For batman gif set == ~0.15
@@ -89,7 +90,7 @@ class SpriteKitGIFView: SKView {
                  withKey:"gifAnimation")
     }
     
-    fileprivate func buildTextureAtlas(_ images: [UIImage]) -> SKTextureAtlas {
+    private func buildTextureAtlas(_ images: [UIImage]) -> SKTextureAtlas {
         var imageDict = [String: UIImage]()
         
         for (i, image) in images.enumerated() {
