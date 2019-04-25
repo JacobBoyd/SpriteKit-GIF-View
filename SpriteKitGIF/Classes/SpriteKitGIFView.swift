@@ -16,17 +16,16 @@ public class SpriteKitGIFView: SKView {
     private var node = SKSpriteNode()
     private var animationFrames: [SKTexture] = []
     
+    @IBInspectable var timePerFrame: Double = 0.06
+    
     public func displayGIF(_ fileURL: URL?) {
         guard let unwrappedURL = fileURL as CFURL? else {
             print("SpriteKitGIFView - fileURL incorrect")
             return
         }
-        activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
-        self.addSubview(activityIndicator)
-        activityIndicator.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        activityIndicator.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
         
         if let imageSource = CGImageSourceCreateWithURL(unwrappedURL, nil) {
+            addActivityIndicator()
             //ImageI/O used to get images("frames" of a gif)
             let count = CGImageSourceGetCount(imageSource)
             var images = [UIImage]()
@@ -41,7 +40,7 @@ public class SpriteKitGIFView: SKView {
             //configure spriteKit options
             animationScene!.scaleMode = .aspectFill
             self.ignoresSiblingOrder = true
-            self.showsFPS = true
+            self.showsFPS = false
             self.presentScene(animationScene!)
             
             activityIndicator.startAnimating()
@@ -52,15 +51,23 @@ public class SpriteKitGIFView: SKView {
                     if self.activityIndicator.isAnimating {
                         self.activityIndicator.stopAnimating()
                     }
-                    self.startAnimation() //default set to 0.06, pass in TimeInterval/Double to change
+                    self.startAnimation(self.timePerFrame) //default set to 0.06, pass in TimeInterval/Double to change
                 }
             }
         }
     }
     
+    private func addActivityIndicator() {
+        activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(activityIndicator)
+        
+        activityIndicator.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
+        activityIndicator.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+    }
+    
     
     private func setFrames(_ images: [UIImage], completion: @escaping () -> Void) {
-        //For Batman gif -> self.backgroundColor = UIColor.blue
         let concurrentQueue = DispatchQueue(label: "com.queue.SpriteKitGIF", attributes: .concurrent)
         concurrentQueue.async {
             let animationAtlas = self.buildTextureAtlas(images)
@@ -71,17 +78,15 @@ public class SpriteKitGIFView: SKView {
             
             //SKSpriteNode will be the actual object "playing" the animation (think of it as like a flipbook of images)
             self.node = SKSpriteNode(texture: firstFrameTexture)
-            self.node.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
-            
-            //For batman
-            //self.node.size = CGSize(width: 65, height: 65)
-            
-            self.animationScene.addChild(self.node)
-            completion()
+            DispatchQueue.main.async {
+                self.node.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+                self.animationScene.addChild(self.node)
+                completion()
+            }
         }
     }
     
-    private func startAnimation(_ timePerFrame: TimeInterval=0.06) {
+    private func startAnimation(_ timePerFrame: TimeInterval) {
         node.run(SKAction.repeatForever(
             SKAction.animate(with: animationFrames,
                              timePerFrame: timePerFrame, //For batman gif set == ~0.15
