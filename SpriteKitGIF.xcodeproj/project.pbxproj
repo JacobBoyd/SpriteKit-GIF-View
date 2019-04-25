@@ -85,9 +85,9 @@
 		168EC49022722C9100AD3276 /* SpriteKitGIF */ = {
 			isa = PBXGroup;
 			children = (
+				168EC4B1227248EC00AD3276 /* Classes */,
 				168EC49122722C9100AD3276 /* SpriteKitGIF.h */,
 				168EC49222722C9100AD3276 /* Info.plist */,
-				168EC4AC2272398400AD3276 /* SpriteKitGIFView.swift */,
 			);
 			path = SpriteKitGIF;
 			sourceTree = "<group>";
@@ -99,6 +99,14 @@
 				168EC49E22722C9100AD3276 /* Info.plist */,
 			);
 			path = SpriteKitGIFTests;
+			sourceTree = "<group>";
+		};
+		168EC4B1227248EC00AD3276 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				168EC4AC2272398400AD3276 /* SpriteKitGIFView.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		7B84A55F88B2CFD7026DBC87 /* Frameworks */ = {
