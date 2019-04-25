@@ -10,6 +10,7 @@
 		168EC49822722C9100AD3276 /* SpriteKitGIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168EC48E22722C9100AD3276 /* SpriteKitGIF.framework */; };
 		168EC49D22722C9100AD3276 /* SpriteKitGIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EC49C22722C9100AD3276 /* SpriteKitGIFTests.swift */; };
 		168EC49F22722C9100AD3276 /* SpriteKitGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 168EC49122722C9100AD3276 /* SpriteKitGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		168EC4AD2272398400AD3276 /* SpriteKitGIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EC4AC2272398400AD3276 /* SpriteKitGIFView.swift */; };
 		84FADD6C6ED29839A26CBFAB /* Pods_SpriteKitGIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B53372AFC45BC5738B11509 /* Pods_SpriteKitGIFTests.framework */; };
 		969C4B62FA16DC6352C816E0 /* Pods_SpriteKitGIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402F8DF46812C916821272A8 /* Pods_SpriteKitGIF.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		168EC49722722C9100AD3276 /* SpriteKitGIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitGIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		168EC49C22722C9100AD3276 /* SpriteKitGIFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitGIFTests.swift; sourceTree = "<group>"; };
 		168EC49E22722C9100AD3276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		168EC4AC2272398400AD3276 /* SpriteKitGIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitGIFView.swift; sourceTree = "<group>"; };
 		265328DC387ACA975D6D18B7 /* Pods-SpriteKitGIF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitGIF.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKitGIF/Pods-SpriteKitGIF.debug.xcconfig"; sourceTree = "<group>"; };
 		32A352E06226402F123A3BC3 /* Pods-SpriteKitGIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitGIF.release.xcconfig"; path = "Target Support Files/Pods-SpriteKitGIF/Pods-SpriteKitGIF.release.xcconfig"; sourceTree = "<group>"; };
 		402F8DF46812C916821272A8 /* Pods_SpriteKitGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 			children = (
 				168EC49122722C9100AD3276 /* SpriteKitGIF.h */,
 				168EC49222722C9100AD3276 /* Info.plist */,
+				168EC4AC2272398400AD3276 /* SpriteKitGIFView.swift */,
 			);
 			path = SpriteKitGIF;
 			sourceTree = "<group>";
@@ -115,7 +118,6 @@
 				1452154FAED1B0487378A413 /* Pods-SpriteKitGIFTests.debug.xcconfig */,
 				929552F87885C473DE723B22 /* Pods-SpriteKitGIFTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -183,6 +185,7 @@
 				TargetAttributes = {
 					168EC48D22722C9100AD3276 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					168EC49622722C9100AD3276 = {
 						CreatedOnToolsVersion = 10.2;
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168EC4AD2272398400AD3276 /* SpriteKitGIFView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -408,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -424,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 265328DC387ACA975D6D18B7 /* Pods-SpriteKitGIF.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -438,9 +443,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MAC.SpriteKitGIF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeSyntax.SpriteKitGIF;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -450,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 32A352E06226402F123A3BC3 /* Pods-SpriteKitGIF.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -464,7 +471,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MAC.SpriteKitGIF;
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeSyntax.SpriteKitGIF;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -476,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1452154FAED1B0487378A413 /* Pods-SpriteKitGIFTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49J78S62G8;
 				INFOPLIST_FILE = SpriteKitGIFTests/Info.plist;
@@ -495,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 929552F87885C473DE723B22 /* Pods-SpriteKitGIFTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49J78S62G8;
 				INFOPLIST_FILE = SpriteKitGIFTests/Info.plist;
