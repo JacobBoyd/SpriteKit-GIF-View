@@ -1,0 +1,6 @@
+framework module Pods_SpriteKitGIF {
+  umbrella header "Pods-SpriteKitGIF-umbrella.h"
+
+  export *
+  module * { export * }
+}
