@@ -5,5 +5,5 @@ Cocoapods usage:
  
  ## Usage
  
- ! [] (https://raw.githubusercontent.com/JacobBoyd/SpriteKit-GIF-View/master/codeUsage.png)
+ <img src="https://raw.githubusercontent.com/JacobBoyd/SpriteKit-GIF-View/master/codeUsage.png" />
  
