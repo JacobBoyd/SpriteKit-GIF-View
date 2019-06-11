@@ -18,6 +18,11 @@ public class SpriteKitGIFView: SKView {
     
     @IBInspectable var timePerFrame: Double = 0.06
     
+    public override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+        //put in placeholder image?
+    }
+    
     public func displayGIF(_ fileURL: URL?) {
         guard let unwrappedURL = fileURL as CFURL? else {
             print("SpriteKitGIFView - fileURL incorrect")
@@ -79,7 +84,8 @@ public class SpriteKitGIFView: SKView {
             //SKSpriteNode will be the actual object "playing" the animation (think of it as like a flipbook of images)
             self.node = SKSpriteNode(texture: firstFrameTexture)
             DispatchQueue.main.async {
-                self.node.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+                self.node.size = self.bounds.size
+                self.node.position = CGPoint(x: self.animationScene.frame.midX, y: self.animationScene.frame.midY)
                 self.animationScene.addChild(self.node)
                 completion()
             }
@@ -89,7 +95,7 @@ public class SpriteKitGIFView: SKView {
     private func startAnimation(_ timePerFrame: TimeInterval) {
         node.run(SKAction.repeatForever(
             SKAction.animate(with: animationFrames,
-                             timePerFrame: timePerFrame, //For batman gif set == ~0.15
+                             timePerFrame: timePerFrame,
                 resize: false,
                 restore: true)),
                  withKey:"gifAnimation")

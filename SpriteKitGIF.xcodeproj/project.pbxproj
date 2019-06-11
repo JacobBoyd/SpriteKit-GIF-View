@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		166ABEE422B01B4A00B262CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166ABEE322B01B4A00B262CE /* AppDelegate.swift */; };
+		166ABEE622B01B4A00B262CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166ABEE522B01B4A00B262CE /* ViewController.swift */; };
+		166ABEE922B01B4A00B262CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166ABEE722B01B4A00B262CE /* Main.storyboard */; };
+		166ABEEB22B01B4B00B262CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 166ABEEA22B01B4B00B262CE /* Assets.xcassets */; };
+		166ABEEE22B01B4B00B262CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 166ABEEC22B01B4B00B262CE /* LaunchScreen.storyboard */; };
+		166ABEF422B01DC100B262CE /* deathstrokeDance.gif in Resources */ = {isa = PBXBuildFile; fileRef = 166ABEF322B01DC100B262CE /* deathstrokeDance.gif */; };
+		166ABEF522B020E000B262CE /* SpriteKitGIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EC4AC2272398400AD3276 /* SpriteKitGIFView.swift */; };
 		168EC49822722C9100AD3276 /* SpriteKitGIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168EC48E22722C9100AD3276 /* SpriteKitGIF.framework */; };
 		168EC49D22722C9100AD3276 /* SpriteKitGIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EC49C22722C9100AD3276 /* SpriteKitGIFTests.swift */; };
 		168EC49F22722C9100AD3276 /* SpriteKitGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 168EC49122722C9100AD3276 /* SpriteKitGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		168EC4AD2272398400AD3276 /* SpriteKitGIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EC4AC2272398400AD3276 /* SpriteKitGIFView.swift */; };
-		84FADD6C6ED29839A26CBFAB /* Pods_SpriteKitGIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B53372AFC45BC5738B11509 /* Pods_SpriteKitGIFTests.framework */; };
-		969C4B62FA16DC6352C816E0 /* Pods_SpriteKitGIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402F8DF46812C916821272A8 /* Pods_SpriteKitGIF.framework */; };
+		4EC2DCE9C525AB283A03ACFE /* Pods_SpriteKitGIFTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FA052E5BC0785BB5F54A64 /* Pods_SpriteKitGIFTests.framework */; };
+		842284086C4EA322EB76D98C /* Pods_SpriteKitGIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29AD67BAAF9AF6CCDFFC8589 /* Pods_SpriteKitGIF.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +33,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1452154FAED1B0487378A413 /* Pods-SpriteKitGIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitGIFTests.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKitGIFTests/Pods-SpriteKitGIFTests.debug.xcconfig"; sourceTree = "<group>"; };
+		166ABEE122B01B4A00B262CE /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		166ABEE322B01B4A00B262CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		166ABEE522B01B4A00B262CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		166ABEE822B01B4A00B262CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		166ABEEA22B01B4B00B262CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		166ABEED22B01B4B00B262CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		166ABEEF22B01B4B00B262CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		166ABEF322B01DC100B262CE /* deathstrokeDance.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = deathstrokeDance.gif; sourceTree = SOURCE_ROOT; };
 		168EC48E22722C9100AD3276 /* SpriteKitGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteKitGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		168EC49122722C9100AD3276 /* SpriteKitGIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteKitGIF.h; sourceTree = "<group>"; };
 		168EC49222722C9100AD3276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,19 +48,27 @@
 		168EC49C22722C9100AD3276 /* SpriteKitGIFTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitGIFTests.swift; sourceTree = "<group>"; };
 		168EC49E22722C9100AD3276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		168EC4AC2272398400AD3276 /* SpriteKitGIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitGIFView.swift; sourceTree = "<group>"; };
-		265328DC387ACA975D6D18B7 /* Pods-SpriteKitGIF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitGIF.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKitGIF/Pods-SpriteKitGIF.debug.xcconfig"; sourceTree = "<group>"; };
-		32A352E06226402F123A3BC3 /* Pods-SpriteKitGIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitGIF.release.xcconfig"; path = "Target Support Files/Pods-SpriteKitGIF/Pods-SpriteKitGIF.release.xcconfig"; sourceTree = "<group>"; };
-		402F8DF46812C916821272A8 /* Pods_SpriteKitGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		929552F87885C473DE723B22 /* Pods-SpriteKitGIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitGIFTests.release.xcconfig"; path = "Target Support Files/Pods-SpriteKitGIFTests/Pods-SpriteKitGIFTests.release.xcconfig"; sourceTree = "<group>"; };
-		9B53372AFC45BC5738B11509 /* Pods_SpriteKitGIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitGIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2142BFA8C82F0B12802D0284 /* Pods-SpriteKitGIFTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitGIFTests.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKitGIFTests/Pods-SpriteKitGIFTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29AD67BAAF9AF6CCDFFC8589 /* Pods_SpriteKitGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B50B5FBCC31926597364E2 /* Pods-SpriteKitGIFTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitGIFTests.release.xcconfig"; path = "Target Support Files/Pods-SpriteKitGIFTests/Pods-SpriteKitGIFTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2FA052E5BC0785BB5F54A64 /* Pods_SpriteKitGIFTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpriteKitGIFTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D1365286EC4BADD5FDAB44 /* Pods-SpriteKitGIF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitGIF.debug.xcconfig"; path = "Target Support Files/Pods-SpriteKitGIF/Pods-SpriteKitGIF.debug.xcconfig"; sourceTree = "<group>"; };
+		F3535C56E7410DB0EE719CF0 /* Pods-SpriteKitGIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpriteKitGIF.release.xcconfig"; path = "Target Support Files/Pods-SpriteKitGIF/Pods-SpriteKitGIF.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		166ABEDE22B01B4A00B262CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		168EC48B22722C9100AD3276 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				969C4B62FA16DC6352C816E0 /* Pods_SpriteKitGIF.framework in Frameworks */,
+				842284086C4EA322EB76D98C /* Pods_SpriteKitGIF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,21 +77,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				168EC49822722C9100AD3276 /* SpriteKitGIF.framework in Frameworks */,
-				84FADD6C6ED29839A26CBFAB /* Pods_SpriteKitGIFTests.framework in Frameworks */,
+				4EC2DCE9C525AB283A03ACFE /* Pods_SpriteKitGIFTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		166ABEE222B01B4A00B262CE /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				166ABEF322B01DC100B262CE /* deathstrokeDance.gif */,
+				166ABEE322B01B4A00B262CE /* AppDelegate.swift */,
+				166ABEE522B01B4A00B262CE /* ViewController.swift */,
+				166ABEE722B01B4A00B262CE /* Main.storyboard */,
+				166ABEEA22B01B4B00B262CE /* Assets.xcassets */,
+				166ABEEC22B01B4B00B262CE /* LaunchScreen.storyboard */,
+				166ABEEF22B01B4B00B262CE /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		168EC48422722C9100AD3276 = {
 			isa = PBXGroup;
 			children = (
 				168EC49022722C9100AD3276 /* SpriteKitGIF */,
 				168EC49B22722C9100AD3276 /* SpriteKitGIFTests */,
+				166ABEE222B01B4A00B262CE /* Example */,
 				168EC48F22722C9100AD3276 /* Products */,
 				AB74AB192A9F73A50C6397F5 /* Pods */,
-				7B84A55F88B2CFD7026DBC87 /* Frameworks */,
+				55B3A1B55C325CBA235E5311 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +115,7 @@
 			children = (
 				168EC48E22722C9100AD3276 /* SpriteKitGIF.framework */,
 				168EC49722722C9100AD3276 /* SpriteKitGIFTests.xctest */,
+				166ABEE122B01B4A00B262CE /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,11 +147,11 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		7B84A55F88B2CFD7026DBC87 /* Frameworks */ = {
+		55B3A1B55C325CBA235E5311 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				402F8DF46812C916821272A8 /* Pods_SpriteKitGIF.framework */,
-				9B53372AFC45BC5738B11509 /* Pods_SpriteKitGIFTests.framework */,
+				29AD67BAAF9AF6CCDFFC8589 /* Pods_SpriteKitGIF.framework */,
+				B2FA052E5BC0785BB5F54A64 /* Pods_SpriteKitGIFTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,10 +159,10 @@
 		AB74AB192A9F73A50C6397F5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				265328DC387ACA975D6D18B7 /* Pods-SpriteKitGIF.debug.xcconfig */,
-				32A352E06226402F123A3BC3 /* Pods-SpriteKitGIF.release.xcconfig */,
-				1452154FAED1B0487378A413 /* Pods-SpriteKitGIFTests.debug.xcconfig */,
-				929552F87885C473DE723B22 /* Pods-SpriteKitGIFTests.release.xcconfig */,
+				E1D1365286EC4BADD5FDAB44 /* Pods-SpriteKitGIF.debug.xcconfig */,
+				F3535C56E7410DB0EE719CF0 /* Pods-SpriteKitGIF.release.xcconfig */,
+				2142BFA8C82F0B12802D0284 /* Pods-SpriteKitGIFTests.debug.xcconfig */,
+				64B50B5FBCC31926597364E2 /* Pods-SpriteKitGIFTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -143,11 +181,28 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		166ABEE022B01B4A00B262CE /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 166ABEF222B01B4B00B262CE /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				166ABEDD22B01B4A00B262CE /* Sources */,
+				166ABEDE22B01B4A00B262CE /* Frameworks */,
+				166ABEDF22B01B4A00B262CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = 166ABEE122B01B4A00B262CE /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
 		168EC48D22722C9100AD3276 /* SpriteKitGIF */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 168EC4A222722C9100AD3276 /* Build configuration list for PBXNativeTarget "SpriteKitGIF" */;
 			buildPhases = (
-				713B8FF5B712CC4A841EF877 /* [CP] Check Pods Manifest.lock */,
+				2D9010CE318D85A08C1EF701 /* [CP] Check Pods Manifest.lock */,
 				168EC48922722C9100AD3276 /* Headers */,
 				168EC48A22722C9100AD3276 /* Sources */,
 				168EC48B22722C9100AD3276 /* Frameworks */,
@@ -166,7 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 168EC4A522722C9100AD3276 /* Build configuration list for PBXNativeTarget "SpriteKitGIFTests" */;
 			buildPhases = (
-				2652144A907FD86B1D51640A /* [CP] Check Pods Manifest.lock */,
+				2EBD0C9C29CBB6B14292F645 /* [CP] Check Pods Manifest.lock */,
 				168EC49322722C9100AD3276 /* Sources */,
 				168EC49422722C9100AD3276 /* Frameworks */,
 				168EC49522722C9100AD3276 /* Resources */,
@@ -191,6 +246,9 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Jacob Boyd";
 				TargetAttributes = {
+					166ABEE022B01B4A00B262CE = {
+						CreatedOnToolsVersion = 10.2;
+					};
 					168EC48D22722C9100AD3276 = {
 						CreatedOnToolsVersion = 10.2;
 						LastSwiftMigration = 1020;
@@ -206,6 +264,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 168EC48422722C9100AD3276;
 			productRefGroup = 168EC48F22722C9100AD3276 /* Products */;
@@ -214,11 +273,23 @@
 			targets = (
 				168EC48D22722C9100AD3276 /* SpriteKitGIF */,
 				168EC49622722C9100AD3276 /* SpriteKitGIFTests */,
+				166ABEE022B01B4A00B262CE /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		166ABEDF22B01B4A00B262CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166ABEEE22B01B4B00B262CE /* LaunchScreen.storyboard in Resources */,
+				166ABEF422B01DC100B262CE /* deathstrokeDance.gif in Resources */,
+				166ABEEB22B01B4B00B262CE /* Assets.xcassets in Resources */,
+				166ABEE922B01B4A00B262CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		168EC48C22722C9100AD3276 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -236,29 +307,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2652144A907FD86B1D51640A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpriteKitGIFTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		713B8FF5B712CC4A841EF877 /* [CP] Check Pods Manifest.lock */ = {
+		2D9010CE318D85A08C1EF701 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,9 +329,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2EBD0C9C29CBB6B14292F645 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpriteKitGIFTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		166ABEDD22B01B4A00B262CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				166ABEE622B01B4A00B262CE /* ViewController.swift in Sources */,
+				166ABEF522B020E000B262CE /* SpriteKitGIFView.swift in Sources */,
+				166ABEE422B01B4A00B262CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		168EC48A22722C9100AD3276 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,7 +390,64 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		166ABEE722B01B4A00B262CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166ABEE822B01B4A00B262CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		166ABEEC22B01B4B00B262CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				166ABEED22B01B4B00B262CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		166ABEF022B01B4B00B262CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49J78S62G8;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.creativeSyntax.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		166ABEF122B01B4B00B262CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49J78S62G8;
+				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.creativeSyntax.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		168EC4A022722C9100AD3276 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -434,7 +572,7 @@
 		};
 		168EC4A322722C9100AD3276 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 265328DC387ACA975D6D18B7 /* Pods-SpriteKitGIF.debug.xcconfig */;
+			baseConfigurationReference = E1D1365286EC4BADD5FDAB44 /* Pods-SpriteKitGIF.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -462,7 +600,7 @@
 		};
 		168EC4A422722C9100AD3276 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32A352E06226402F123A3BC3 /* Pods-SpriteKitGIF.release.xcconfig */;
+			baseConfigurationReference = F3535C56E7410DB0EE719CF0 /* Pods-SpriteKitGIF.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -489,7 +627,7 @@
 		};
 		168EC4A622722C9100AD3276 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1452154FAED1B0487378A413 /* Pods-SpriteKitGIFTests.debug.xcconfig */;
+			baseConfigurationReference = 2142BFA8C82F0B12802D0284 /* Pods-SpriteKitGIFTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -509,7 +647,7 @@
 		};
 		168EC4A722722C9100AD3276 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 929552F87885C473DE723B22 /* Pods-SpriteKitGIFTests.release.xcconfig */;
+			baseConfigurationReference = 64B50B5FBCC31926597364E2 /* Pods-SpriteKitGIFTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +668,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		166ABEF222B01B4B00B262CE /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				166ABEF022B01B4B00B262CE /* Debug */,
+				166ABEF122B01B4B00B262CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		168EC48822722C9100AD3276 /* Build configuration list for PBXProject "SpriteKitGIF" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
