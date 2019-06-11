@@ -5,5 +5,5 @@ Cocoapods usage:
  
  ## Usage
  
- ![alt text] ()
+ ![alt text] (https://github.com/JacobBoyd/SpriteKit-GIF-View/blob/master/codeUsage.png "Code usage example")
  
