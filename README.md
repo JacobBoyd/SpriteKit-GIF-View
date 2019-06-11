@@ -5,5 +5,5 @@ Cocoapods usage:
  
  ## Usage
  
- ! [screenshot] (codeUsage.png "Code usage example")
+ ! [screenshot] (/codeUsage.png "Code usage example")
  
